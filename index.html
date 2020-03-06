@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="this.js" defer></script>
+</head>
+<body>
+    <p>
+        <button value="chUp" onclick="remote.switchChannel(this.value)">CH+</button>
+        <button value="chDown" onclick="remote.switchChannel(this.value)">CH-</button>
+        <button value="vlUp" onclick="remote.switchVolume(this.value)">VL+</button>
+        <button value="vlDown" onclick="remote.switchVolume(this.value)">VL-</button>
+        <button value="pwOn" onclick="remote.turnOnOff(this.value)">POWER ON</button>
+        <button value="pwOff" onclick="remote.turnOnOff(this.value)">POWER OFF</button>
+    </p>
+    <p>
+        <span>PowerStatus:</span><span id="status">ON/OFF</span><br/>
+        <span>Volume:</span><span id="volume">50</span><br/>
+        <span>Channel:</span><span id="channel">1</span><br/>
+    </p>
+</body>
+</html>
